@@ -1,9 +1,9 @@
-const USER_INPUT = object.set({
+const USER_INPUT = Object.set({
   replay: 1,
   end: 2,
 });
 
-const GAMEBOX_CONDITION = object.set({
+const GAMEBOX_CONDITION = Object.set({
   maxLength: 3,
   noInclusion: 0,
   startNumber: 1,
