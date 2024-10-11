@@ -1,5 +1,7 @@
-import { Random } from "@woowacourse/mission-utils";
-import { GAMEBOX_CONDITION } from "../constants/conditions";
+import MissionUtils from "@woowacourse/mission-utils";
+import { GAMEBOX_CONDITION } from "../constants/conditions.js";
+
+MissionUtils.Random;
 
 class NumberGenerator {
   #computerNumber;

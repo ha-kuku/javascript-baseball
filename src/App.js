@@ -1,7 +1,19 @@
-const MissionUtils = require("@woowacourse/mission-utils");
+import BaseballGameController from "./controller/BaseballGameController.js";
+import NumberGenerator from "./models/NumberGenerator.js";
 
 class App {
-  play() {}
+  #gameController;
+
+  constructor() {
+    this.#gameController = new BaseballGameController(new NumberGenerator());
+  }
+
+  async play() {
+    await this.#gameController.startGame();
+  }
 }
 
-module.exports = App;
+const app = new App();
+app.play();
+
+export default App;

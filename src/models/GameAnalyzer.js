@@ -1,11 +1,11 @@
 const GameAnalyzer = {
   getBallAndStrike(computerNumber, userNumber) {
-    return this.calBallAndStrike(String(computerNumber), String(userNumber));
+    return this.calcBallAndStrike(String(computerNumber), String(userNumber));
   },
 
   calcBallAndStrike(computerString, userString) {
-    const ball = 0;
-    const strike = 0;
+    let ball = 0;
+    let strike = 0;
 
     [...computerString].forEach((char, index) => {
       if (userString[index] === char) strike += 1;
